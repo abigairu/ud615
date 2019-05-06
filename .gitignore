@@ -27,3 +27,4 @@ _testmain.go
 # OSX specific
 .DS_Store
 
+.history
