@@ -22,7 +22,7 @@ spec:
           cpu: 0.2
           memory: "10Mi"
     - name: hello
-      image: hello:1.0.1
+      image: gcr.io/pofc003/hello:1.0.1
       args:
         - "-http=0.0.0.0:82"
         - "-health=0.0.0.0:83"
