@@ -7,7 +7,7 @@ import (
 
 type HelloResponse struct {
 	Message string `json:"message"`
-	Version string `json:version`
+	Version string `json:"version"`
 }
 
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
