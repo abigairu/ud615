@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "monolith:1.0.1"
+  name: "monolith-1.0.1"
   labels:
-    app: "monolith:1.0.1"
+    app: "monolith-1.0.1"
 spec:
   containers:
     - name: monolith
