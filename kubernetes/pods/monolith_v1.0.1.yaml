@@ -25,14 +25,14 @@ spec:
       image: gcr.io/pofc003/hello:1.0.1
       imagePullPolicy: IfNotPresent
       args:
-        - "-http=0.0.0.0:82"
-        - "-health=0.0.0.0:83"
+        - "-http=0.0.0.0:80"
+        - "-health=0.0.0.0:81"
         - "-secret=secret"
       ports:
         - name: http
-          containerPort: 82
+          containerPort: 80
         - name: health
-          containerPort: 83
+          containerPort: 81
       resources:
         limits:
           cpu: 0.2
