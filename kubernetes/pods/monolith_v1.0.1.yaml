@@ -23,6 +23,7 @@ spec:
           memory: "10Mi"
     - name: hello
       image: hello:1.0.1
+      imagePullPolicy: IfNotPresent
       args:
         - "-http=0.0.0.0:82"
         - "-health=0.0.0.0:83"
