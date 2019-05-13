@@ -6,7 +6,7 @@ metadata:
     app: hello
 spec:
   containers:
-    - name: hello
+    - name: "hello:1.0.0"
       image: gcr.io/pofc003/hello:1.0.0
       args:
         - "-http=0.0.0.0:80"
