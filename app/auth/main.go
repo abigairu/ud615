@@ -15,7 +15,7 @@ import (
 	"github.com/udacity/ud615/app/user"
 )
 
-const version = "1.0.0"
+const version = "1.0.2"
 
 func main() {
 	var (
@@ -47,6 +47,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.Handle("/login", handlers.LoginHandler(*secret, user.DB))
 	mux.Handle("/version", handlers.VersionHandler(version))
+	mux.Handle("/secure", handlers.JWTAuthHandler(handlers.HelloHandler))
 
 	httpServer := manners.NewServer()
 	httpServer.Addr = *httpAddr
