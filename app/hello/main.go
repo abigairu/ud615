@@ -14,7 +14,7 @@ import (
 	"github.com/udacity/ud615/app/health"
 )
 
-const version = "1.0.1"
+const version = "1.0.3"
 
 func main() {
 	var (

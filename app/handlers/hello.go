@@ -12,8 +12,8 @@ type HelloResponse struct {
 
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	response := HelloResponse{
-		Version: "v1.0.1",
-		Message: "Hello... from my fork",
+		Version: "v1.0.3",
+		Message: "Hello... world?",
 	}
 	json.NewEncoder(w).Encode(response)
 	return
